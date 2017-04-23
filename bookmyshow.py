@@ -188,7 +188,7 @@ def getFormattedMessage(finallist , goURL):
 
 def findTickets(argv):
 	try:
-		opts,args = getopt.getopt(argv,'',["movie=","theatres=","email=","searchFrom=","searchFor="])
+		opts,args = getopt.getopt(argv,'',["movie=","theaters=","email=","searchFrom=","searchFor="])
 	except getopt.GetoptError:
 		print("Error occured.. Exiting!")
 		exit()
@@ -203,7 +203,7 @@ def findTickets(argv):
 		# print(arg)
 		if(opt =='--movie'):
 			findMovie = arg.split(",")
-		if(opt == '--theatres'):
+		if(opt == '--theaters'):
 			prefferedTheatres = arg.split(",")
 		if(opt == '--email'):
 			toEmail = arg
