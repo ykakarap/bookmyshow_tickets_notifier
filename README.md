@@ -3,26 +3,26 @@ Python code to check if movie tickets are available in in.bookmyshow.com
 
 
 ## Note : 
-Configured to work for Hyderabad city.
-Looks for tickets that cost <= 150 INR . Price range of the non-recliner multiplex seats in Hyderabad
-This script DOEST NOT book tickets. It only sends you a notification.
+- Configured to work for Hyderabad city.
+- Looks for tickets that cost <= 150 INR . Price range of the non-recliner multiplex seats in Hyderabad
+- This script DOEST NOT book tickets. It only sends you a notification.
 
 ## Dependencies:
-You will need Python 3.x to run this script. Get it from https://www.python.org/downloads/
-Once python 3 is installed you need a 'beautifulsoup4' dependency to run the script.
-To install the dependency run from your favourite termminal:
+- You will need Python 3.x to run this script. Get it from https://www.python.org/downloads/
+- Once python 3 is installed you need a 'beautifulsoup4' dependency to run the script.
+- To install the dependency run from your favourite termminal:
 `
 pip install beautifulsoap4
 `
 
 
 ## Usage :
-	- Open `bookmyshow.py` in your favourite editor.
-	- Look for "YOUR_GMAIL_ID_HERE" (occurs 2 times in the script) and replace it with any of your gmail id.
-	- Look for "YOUR_GMAIL_PASSWORD_HERE" and replace it with the corresponding gmail password
-	- The above gmail id is used to send you an email notifications once the script finds tickets.
-	- Your gmail id and password are completely safe and exist only locally. If you dont want to or cant use your current gmail id for some reason create a secondary gmail to receive notifications.
-	- The above gmail id is different from the "email" prarm you pass to the script(Look below). The above gmail id is used to send notifications. The "email" param is used to receive notifications.
+- Open 'bookmyshow.py' in your favourite editor.
+- Look for "YOUR_GMAIL_ID_HERE" (occurs 2 times in the script) and replace it with any of your gmail id.
+- Look for "YOUR_GMAIL_PASSWORD_HERE" and replace it with the corresponding gmail password
+- The above gmail id is used to send you an email notifications once the script finds tickets.
+- Your gmail id and password are completely safe and exist only locally. If you dont want to or cant use your current gmail id for some reason create a secondary gmail to receive notifications.
+- The above gmail id is different from the "email" prarm you pass to the script(Look below). The above gmail id is used to send notifications. The "email" param is used to receive notifications.
 
 You are ready!!
 
