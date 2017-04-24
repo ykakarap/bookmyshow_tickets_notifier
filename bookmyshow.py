@@ -268,6 +268,6 @@ def findTicketsRecursively(args):
 		# findTickets(args)
 
 
-		time.sleep(2*60*1000)
+		time.sleep(2*60)
 
 findTicketsRecursively(sys.argv[1:])
