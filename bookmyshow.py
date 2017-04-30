@@ -29,7 +29,7 @@ def getDates( searchFrom , searchFor ):
 		searchFrom = searchFromDateObj.strftime('%Y%m%d')
 	else:
 		searchFromDateObj = datetime.datetime.strptime(searchFrom,'%Y%m%d')
-		searchFrom = datetime.datetime.now(pytz.timezone('Asia/Calcutta')).strftime('%Y%m%d')
+		searchFrom = searchFromDateObj.strftime("%Y%m%d")
 	# print(type(dateToday))
 	# print(dateToday)
 	listOfDates = []
@@ -110,7 +110,7 @@ def isValidDate(goURL, date):
 		if(datetime.datetime.now(pytz.timezone('Asia/Calcutta')).strftime('%Y%m%d') == date):
 			return True
 	elif(selectedDate.lower() == 'tomorrow'):
-		tempDate = datetime.datetime.now(pytz.timezone('Asia/Calcutta')).strftime('%Y%m%d')
+		tempDate = datetime.datetime.now(pytz.timezone('Asia/Calcutta'))
 		targetDate = tempDate + datetime.timedelta(days=1)
 		if(targetDate.strftime('%Y%m%d') == date):
 			return True
@@ -124,7 +124,7 @@ def getAvailableShowsAndEmail( findMovie,searchFrom ,searchFor , bookmyshow_base
 	goURL_base = bookmyshow_base + goHref
 	listOfDatesRequired = getDates(searchFrom , searchFor)
 	foundTickets = False
-	finalMessage = 'Below is the list of all the available shows for the next ' + str(searchFor) + ' days'
+	finalMessage = 'Below is the list of all the available shows for the next ' + str(searchFor) + " days \n"
 	for day in listOfDatesRequired:
 		dayInDateTime = datetime.datetime.strptime(day, "%Y%m%d")
 		dayInFormat = dayInDateTime.strftime('%d-%m-%Y')
