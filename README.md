@@ -28,7 +28,7 @@ You are ready!!
 
 Example usage:  
 ```
-$ python3 bookmyshow.py --movie "Baahubali,conclusion" --theaters "Inorbit,Forum" --email "your@email.com" --searchFrom "20170304" --searchFor "3"
+$ python3 bookmyshow.py --movie="Baahubali,conclusion" --theaters="Inorbit,Forum" --email="your@email.com" --searchFrom="20170304" --searchFor="3"
 ```
 
 The above code searches for Movie tickets of 'Baahubali - The Conclusion'(The movie whos name has both the words 'Baahubali' and 'conclusion'. Can add more terms if needed. Case insensitive) in theaters 'Inorbit and Forum' for 4th March 2017 and the next 2 days (3 days in total)
