@@ -21,8 +21,8 @@ pip install beautifulsoap4
 - Look for `YOUR_GMAIL_ID_HERE` (occurs 2 times in the script) and replace it with any of your gmail id.
 - Look for `YOUR_GMAIL_PASSWORD_HERE` and replace it with the corresponding gmail password
 - The above gmail id is used to send you email notifications once the script finds tickets.
-- Your gmail id and password are completely safe and exist only locally. If you don't want to or cant use your current gmail id for some reason create a secondary gmail to receive notifications.
-- The above gmail id is different from the "email" prarm you pass to the script(Look below). The above gmail id is used to send notifications. The "email" param is used to send notifications.
+- Your gmail id and password are completely safe and exist only locally. If you don't want to or cant use your current gmail id for some reason create a secondary gmail to send notifications.
+- The above gmail id is different from the "email" prarm you pass to the script(Look below). The above gmail id is used to send notifications. The "email" param is used to receive notifications.
 
 You are ready!!
 
