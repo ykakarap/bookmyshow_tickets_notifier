@@ -144,7 +144,7 @@ def getAvailableShowsAndEmail( findMovie,searchFrom ,searchFor , bookmyshow_base
 			msg2 = "The movie is not being screened for this day at any of your preferred theatres.\n\n"
 		else:
 			foundTickets = True
-			msg2 =  getFormattedMessage(listOfShows,goURL[:-9]+day+"/")
+			msg2 =  getFormattedMessage(listOfShows,goURL)
 		finalMessage = finalMessage + msg1 + msg2
 		# print(finalMessage)
 
